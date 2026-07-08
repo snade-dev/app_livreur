@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "All-in-One Livreur",
+    "slug": "all-in-one-livreur",
+    "scheme": "allinonelivreur",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FBFCFB",
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.allinone.livreur",
+      "adaptiveIcon": {
+        "backgroundColor": "#FBFCFB",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Autorise l'accès à ta position pour que le client suive sa livraison en direct."
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
